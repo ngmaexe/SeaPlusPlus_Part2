@@ -1,0 +1,15 @@
+bream 25
+tarwhine 20
+mahi 60
+eels 30
+luderick 27
+mackerel 75
+morwong 30 
+mullet 15 
+shark 91 
+snapper 30 
+tuna 90 
+wahoo 27 
+mud_crab 8.5
+crab 9.3
+lobster 10.4

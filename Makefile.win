@@ -1,0 +1,58 @@
+# Project: SeaPlusPlusPart2
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Angler.o App.o InvertebrateChecker.o InvertebrateCreature.o main.o RuleLoader.o SeaChecker.o SeaCreature.o SeaPlusPlusEngine.o VertebrateChecker.o VertebrateCreature.o
+LINKOBJ  = Angler.o App.o InvertebrateChecker.o InvertebrateCreature.o main.o RuleLoader.o SeaChecker.o SeaCreature.o SeaPlusPlusEngine.o VertebrateChecker.o VertebrateCreature.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = SeaPlusPlusPart2.exe
+CXXFLAGS = $(CXXINCS) -std=gnu++11
+CFLAGS   = $(INCS) -std=gnu++11
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Angler.o: Angler.cpp
+	$(CPP) -c Angler.cpp -o Angler.o $(CXXFLAGS)
+
+App.o: App.cpp
+	$(CPP) -c App.cpp -o App.o $(CXXFLAGS)
+
+InvertebrateChecker.o: InvertebrateChecker.cpp
+	$(CPP) -c InvertebrateChecker.cpp -o InvertebrateChecker.o $(CXXFLAGS)
+
+InvertebrateCreature.o: InvertebrateCreature.cpp
+	$(CPP) -c InvertebrateCreature.cpp -o InvertebrateCreature.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+RuleLoader.o: RuleLoader.cpp
+	$(CPP) -c RuleLoader.cpp -o RuleLoader.o $(CXXFLAGS)
+
+SeaChecker.o: SeaChecker.cpp
+	$(CPP) -c SeaChecker.cpp -o SeaChecker.o $(CXXFLAGS)
+
+SeaCreature.o: SeaCreature.cpp
+	$(CPP) -c SeaCreature.cpp -o SeaCreature.o $(CXXFLAGS)
+
+SeaPlusPlusEngine.o: SeaPlusPlusEngine.cpp
+	$(CPP) -c SeaPlusPlusEngine.cpp -o SeaPlusPlusEngine.o $(CXXFLAGS)
+
+VertebrateChecker.o: VertebrateChecker.cpp
+	$(CPP) -c VertebrateChecker.cpp -o VertebrateChecker.o $(CXXFLAGS)
+
+VertebrateCreature.o: VertebrateCreature.cpp
+	$(CPP) -c VertebrateCreature.cpp -o VertebrateCreature.o $(CXXFLAGS)

@@ -1,0 +1,22 @@
+bream 25 10 
+tarwhine 20 1 
+mahi 60 10 
+eels 30 10 
+luderick 27 1 
+mackerel 75 1 
+morwong 30 10 
+mullet 15 20 
+shark 91 5 
+snapper 30 10 
+tuna 90 2 
+wahoo 27 5 
+mud_crab 8.5 5 
+crab 9.3 10 
+lobster 10.4 3 
+bass 1 2 
+murray 10 2 
+cod 55 2 
+rainbow 50 1 
+brook 25 5 
+perch 25 5 
+
